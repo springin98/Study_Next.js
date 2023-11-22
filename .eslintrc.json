@@ -1,3 +1,7 @@
 {
-  "extends": "next/core-web-vitals"
+  // ESLint 모드
+  // Strict : next/core-web-vitals
+  // Base : next
+  // Cancel : extends 삭제
+  "extends": ["next/core-web-vitals", "prettier"]
 }
