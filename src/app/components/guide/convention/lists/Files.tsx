@@ -6,7 +6,7 @@ export default function Files() {
         <h3>import 순서</h3>
         <p>* 절대 경로를 사용한다.</p>
         <ul>
-          <li>"use client"</li>
+          <li>{`"use client"`}</li>
           <li>React</li>
           <li>Next</li>
           <li>Labrary</li>
@@ -23,7 +23,7 @@ export default function Files() {
       </div>
       <div>
         <h3>정의 순서</h3>
-        <p>* 범위가 큰 순서대로 정의한다.</p>
+        <p>{`* 범위가 큰 순서대로 정의한다.`}</p>
         <ul>
           <li>상수&변수</li>
           <ul>
