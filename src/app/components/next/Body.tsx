@@ -12,7 +12,14 @@ export default function Body() {
           <p>Utils</p>
           <ul>
             <li>
-              <Link href={`/next/utils/changeFormat`}>changeFormat</Link>
+              <Link href={`/next/utils/changeDateFormat`}>
+                changeDateFormat
+              </Link>
+            </li>
+            <li>
+              <Link href={`/next/utils/changeContentFormat`}>
+                changeContentFormat
+              </Link>
             </li>
             <li>
               <Link href={`/next/utils/scroll`}>scroll</Link>
