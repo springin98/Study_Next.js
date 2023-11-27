@@ -3,12 +3,13 @@ import { useCallback } from "react";
 import styled from "styled-components";
 
 export default function Body() {
-  const { openScroll, lockScroll } = useScroll();
+  const { openScroll, lockScroll, scrollUp } = useScroll();
 
   return (
     <Wrapper>
       <button onClick={() => openScroll()}>Scroll Open</button>
       <button onClick={() => lockScroll()}>Scroll Lock</button>
+      <button onClick={() => scrollUp()}>Scroll Up</button>
     </Wrapper>
   );
 }
@@ -27,7 +28,11 @@ export const useScroll = () => {
     document.body.style.width = "100%";
   }, []);
 
-  return { openScroll, lockScroll };
+  const scrollUp = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  return { openScroll, lockScroll, scrollUp };
 };
 
 const Wrapper = styled.div`
