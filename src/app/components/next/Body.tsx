@@ -9,6 +9,9 @@ export default function Body() {
           <Link href={`/next/router`}>Router</Link>
         </li>
         <li>
+          <Link href={`/next/variable`}>Variable</Link>
+        </li>
+        <li>
           <p>Utils</p>
           <ul>
             <li>
