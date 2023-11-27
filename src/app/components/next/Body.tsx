@@ -24,6 +24,9 @@ export default function Body() {
             <li>
               <Link href={`/next/utils/scroll`}>scroll</Link>
             </li>
+            <li>
+              <Link href={`/next/utils/cookies`}>cookies</Link>
+            </li>
           </ul>
         </li>
       </ul>
