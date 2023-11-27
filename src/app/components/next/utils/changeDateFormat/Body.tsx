@@ -5,20 +5,30 @@ export default function Body() {
       <span>920947320</span> = <span>{changeUnixTime("920947320")}</span>
       <p>Unix Time : 1970월 1월 1일 00시 00분 00초부터 현재까지 누적된 초 값</p>
       <br />
-      <h3>Change "YYYY.MM.DD" to MM.DD (Day) HH:MM</h3>
-      <span>"1999.03.09"</span> = <span>{changeDateFormat("1999.03.09")}</span>
+      <h3>{`Change "YYYY.MM.DD" to MM.DD (Day) HH:MM`}</h3>
+      <span>{`"1999.03.09"`}</span>
+      {` = `}
+      <span>{changeDateFormat("1999.03.09")}</span>
       <br />
       <h3>new Date to YYYYMMDD</h3>
-      <span>new Date()</span> = <span>{getFormatYYYYMMDD(new Date())}</span>
+      <span>new Date()</span>
+      {` = `}
+      <span>{getFormatYYYYMMDD(new Date())}</span>
       <br />
       <h3>new Date to MM.DD (Day) HH:MM</h3>
-      <span>new Date()</span> = <span>{getFormattedString(new Date())}</span>
+      <span>new Date()</span>
+      {` = `}
+      <span>{getFormattedString(new Date())}</span>
       <br />
       <h3>new Date time to MM. DD</h3>
-      <span>new Date()</span> = <span>{getFormattedDate(new Date())}</span>
+      <span>new Date()</span>
+      {` = `}
+      <span>{getFormattedDate(new Date())}</span>
       <br />
       <h3>new Date time to HH:MM</h3>
-      <span>new Date()</span> = <span>{getFormattedTime(new Date())}</span>
+      <span>new Date()</span>
+      {` = `}
+      <span>{getFormattedTime(new Date())}</span>
     </>
   );
 }
