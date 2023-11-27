@@ -24,6 +24,12 @@ export default function SaveCookies() {
     );
   };
 
+  const onClick = () => {
+    if (saveCookies.key.length < 1 || saveCookies.value.length < 1) return;
+    UseSaveCookies({ key: saveCookies.key, value: saveCookies.value });
+    router.refresh();
+  };
+
   return (
     <Div>
       <h3>쿠키에 값 저장하기</h3>
@@ -45,23 +51,14 @@ export default function SaveCookies() {
           onChange={(e) => onChange({ e: e, position: "value" })}
         />
       </label>
-      <Button
-        onClick={() => {
-          if (saveCookies.key.length < 1 || saveCookies.value.length < 1)
-            return;
-          useSaveCookies({ key: saveCookies.key, value: saveCookies.value });
-          router.refresh();
-        }}
-      >
-        저장
-      </Button>
+      <Button onClick={() => onClick()}>저장</Button>
     </Div>
   );
 }
 
 const cookies = new Cookies();
 
-const useSaveCookies = ({ key: key, value: value }: useSaveCookiesProps) => {
+const UseSaveCookies = ({ key: key, value: value }: UseSaveCookiesProps) => {
   // options (object): Support all the cookie options from RFC 6265
   // path (string): cookie path, use / as the path if you want your cookie to be accessible on all pages
   // expires (Date): absolute expiration date for the cookie
@@ -70,10 +67,11 @@ const useSaveCookies = ({ key: key, value: value }: useSaveCookiesProps) => {
   // secure (boolean): Is only accessible through HTTPS?
   // httpOnly (boolean): Can only the server access the cookie? Note: You cannot get or set httpOnly cookies from the browser, only the server.
   // sameSite (boolean|none|lax|strict): Strict or Lax enforcement
-  return cookies.set(key, value, { path: `/` });
+  cookies.set(key, value, { path: `/` });
+  return;
 };
 
-interface useSaveCookiesProps {
+interface UseSaveCookiesProps {
   key: string;
   value?: string;
 }

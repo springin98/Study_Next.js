@@ -17,16 +17,16 @@ export default function Body() {
 export const useScroll = () => {
   let scrollPosition: number = 0;
 
-  const openScroll = useCallback(() => {
+  const openScroll = () => {
     document.body.style.removeProperty("overflow");
     document.body.style.removeProperty("width");
-  }, []);
+  };
 
-  const lockScroll = useCallback(() => {
+  const lockScroll = () => {
     scrollPosition = window.scrollY;
     document.body.style.overflow = "hidden";
     document.body.style.width = "100%";
-  }, []);
+  };
 
   const scrollUp = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });

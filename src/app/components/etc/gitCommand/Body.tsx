@@ -12,7 +12,7 @@ export default function Body() {
       <p>git add .</p>
       <br />
       <h4>커밋 생성</h4>
-      <p>git commit -m "커밋 메시지"</p>
+      <p>git commit -m &quot;커밋 메시지&quot;</p>
       <br />
       <h4>브랜치 목록</h4>
       <p>git branch</p>

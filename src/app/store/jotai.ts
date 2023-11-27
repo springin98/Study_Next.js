@@ -1,7 +1,7 @@
 import { atom } from "jotai";
 import { atomWithImmer } from "jotai-immer";
 
-export const jotaiImmerAtom = atomWithImmer({
+export const jotaiImmerAtom = atomWithImmer<jotaiImmerType>({
   a: "",
   b: "",
   c: "",
@@ -9,8 +9,8 @@ export const jotaiImmerAtom = atomWithImmer({
 
 interface jotaiImmerType {
   a: string;
-  b: number;
-  c: Array<string>;
+  b: string;
+  c: string;
 }
 
 export const jotaiAtom = atom<string>("");
