@@ -5,6 +5,8 @@ export default function Body() {
     <div>
       <h1>Main</h1>
       <div>
+        <Link href={`/etc`}>ETC</Link>
+        <br />
         <Link href={`/guide`}>Guide</Link>
         <br />
         <Link href={`/next`}>Next Skill</Link>
