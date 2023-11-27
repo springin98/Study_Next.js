@@ -7,17 +7,15 @@ export default function Body() {
       <ul>
         <li>
           <Link href={`/next/router`}>Router</Link>
-          <ul>
-            <li>
-              {/* <Link href={`/next/router/utils/chanfeFormat`}>changeFormat</Link> */}
-            </li>
-          </ul>
         </li>
         <li>
-          <Link href={`/next/utils`}>Utils</Link>
+          <p>Utils</p>
           <ul>
             <li>
               <Link href={`/next/utils/changeFormat`}>changeFormat</Link>
+            </li>
+            <li>
+              <Link href={`/next/utils/scroll`}>scroll</Link>
             </li>
           </ul>
         </li>
