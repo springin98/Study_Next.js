@@ -12,6 +12,8 @@ export default function Body() {
         <Link href={`/next`}>Next Skill</Link>
         <br />
         <Link href={`/library`}>Library</Link>
+        <br />
+        <Link href={`/utils`}>Utils</Link>
       </div>
     </div>
   );
