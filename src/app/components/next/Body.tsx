@@ -15,25 +15,7 @@ export default function Body() {
           <Link href={`/next/selection`}>selection</Link>
         </li>
         <li>
-          <p>Utils</p>
-          <ul>
-            <li>
-              <Link href={`/next/utils/changeDateFormat`}>
-                changeDateFormat
-              </Link>
-            </li>
-            <li>
-              <Link href={`/next/utils/changeContentFormat`}>
-                changeContentFormat
-              </Link>
-            </li>
-            <li>
-              <Link href={`/next/utils/scroll`}>scroll</Link>
-            </li>
-            <li>
-              <Link href={`/next/utils/cookies`}>cookies</Link>
-            </li>
-          </ul>
+          <Link href={`/next/api`}>API</Link>
         </li>
       </ul>
     </div>
