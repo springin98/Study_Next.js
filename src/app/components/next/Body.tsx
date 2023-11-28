@@ -12,6 +12,9 @@ export default function Body() {
           <Link href={`/next/variable`}>Variable</Link>
         </li>
         <li>
+          <Link href={`/next/selection`}>selection</Link>
+        </li>
+        <li>
           <p>Utils</p>
           <ul>
             <li>
