@@ -15,28 +15,6 @@ export default function MultipleCheck() {
 
   const [filterBtnActive, setFilterBtnActive] = useState<boolean>(true);
 
-  //   const selectAll = () => {
-  //     if (!fuelTypeTotal) {
-  //       setFuelType([]);
-  //     } else {
-  //       setFuelType(["휘발유"]);
-  //     }
-  //   };
-
-  //   useEffect(() => {
-  //     switch (fuelType.length) {
-  //       case 0:
-  //         setFuelTypeTotal(true);
-  //         break;
-  //       case 4:
-  //         setFuelType([]);
-  //         break;
-  //       default:
-  //         setFuelTypeTotal(false);
-  //         break;
-  //     }
-  //   }, [fuelType]);
-
   const selectAll = () => {
     if (fuelType.length === 0) {
       setFilterBtnActive(!filterBtnActive);
@@ -97,7 +75,6 @@ const SelectBox = styled.div`
 `;
 
 const TotalInput = styled.input<{ isselected: boolean }>`
-  border: 0.8px solid blue;
   appearance: none;
   border: 0.8px solid ${(props) => (props.isselected ? "blue" : "gray")};
   background-color: ${(props) => (props.isselected ? "blue" : "gray")};
@@ -132,5 +109,5 @@ const Button = styled.button<{ isselected: boolean }>`
   font-size: 0.8rem;
   font-weight: 600;
   margin-left: 4px;
-  background-color: ${(props) => (props.isselected ? "blue" : "#f9f9f9")};
+  background-color: ${(props) => (props.isselected ? "blue" : "gray")};
 `;
