@@ -34,6 +34,7 @@ export default function MultipleSelection() {
     } else {
       setSelectCarKindTotal(false);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedOption, selectCarKindTotal]);
 
   return (

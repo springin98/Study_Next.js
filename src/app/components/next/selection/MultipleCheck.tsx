@@ -39,6 +39,7 @@ export default function MultipleCheck() {
     } else {
       setFilterBtnActive(true);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [fuelType]);
 
   return (
